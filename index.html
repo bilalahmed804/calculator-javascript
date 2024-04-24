@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Calculate me! - A calculator made my me</title>
+  </head>
+  <body>
+    <div class="header">
+    <h1 class="text_center">Welcome to Calculate me!</h1>
+    <div class="calculator">
+      <div class="containor flex flex-col bg_color max_auto">
+        <div class="row">
+            <input class="input" type="text" id="display" readonly>
+        </div>
+      <div class="row">
+        <button class="button" onclick="getNumber('%')">%</button>
+        <button class="button" onclick="getSqure('2')">&#x221A;</button>
+        <button class="button" onclick="clearResult('CE')">CE</button>
+        <button class="button" onclick="onebyone('C')">C</button>
+      </div>
+      <div class="row">
+          <button class="button" onclick="getNumber('7')">7</button>
+          <button class="button" onclick="getNumber('8')">8</button>
+          <button class="button" onclick="getNumber('9')">9</button>
+          <button class="button" onclick="getNumber('-')"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="row">
+          <button class="button" onclick="getNumber('4')">4</button>
+          <button class="button" onclick="getNumber('5')">5</button>
+          <button class="button" onclick="getNumber('6')">6</button>
+          <button class="button" onclick="getNumber('/')"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="row">
+          <button class="button" onclick="getNumber('1')">1</button>
+          <button class="button" onclick="getNumber('2')">2</button>
+          <button class="button" onclick="getNumber('3')">3</button>
+          <button class="button" onclick="getNumber('*')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="row">
+          <button class="button" onclick="getNumber('.')">.</button>
+          <button class="button" onclick="getNumber('0')">0</button>
+          <button class="button" onclick="getResult('=')"><i class="fa-solid fa-equals"></i></button>
+          <button class="button" onclick="getNumber('+')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+    </div>
+    </div>
+  </body>
+  <script src="JS/app.js"></script>
+</html>
+
