@@ -43,13 +43,13 @@ function getResult(){
             if (num2 !== 0) {
                 result = num1 / num2;
             } else {
-                result = 'Error: Division by zero';
+                result = 'zero';
             }
         } else {
-            result = 'Error: Invalid operator';
+            result = 'Error';
         }
     } else {
-        result = 'Error: Invalid ';
+        result = 'Error';
     }
 
     display.value = result;
